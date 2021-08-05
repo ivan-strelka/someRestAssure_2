@@ -231,6 +231,7 @@ public class VideoGamesTests extends BaseTest {
                 .statusCode(200)
                 .log().all().extract().response();
 
+
         String jsonString4 = response3.asString();
         Assert.assertEquals(jsonString4.contains("Record Deleted Successfully"), true);
 
